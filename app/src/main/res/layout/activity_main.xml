@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nodeNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Node Name"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/addChildButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nodeNameEditText"
+        android:layout_marginTop="16dp"
+        android:text="Add Child"/>
+
+    <Button
+        android:id="@+id/deleteNodeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addChildButton"
+        android:layout_marginTop="16dp"
+        android:text="Delete Node"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/treeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/deleteNodeButton"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
